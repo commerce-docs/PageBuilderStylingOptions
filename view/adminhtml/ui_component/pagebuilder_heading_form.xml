@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <field name="heading_color" sortOrder="25" formElement="select" component="Magento_PageBuilder/js/form/element/visual-select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="string">brand-black</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Heading Colors</label>
+                <elementTmpl>Magento_PageBuilder/form/element/visual-select</elementTmpl>
+                <notice translate="true">Select from one of the approved Acme brand colors.</notice>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options class="BrandColorSource"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+        <field name="heading_style" sortOrder="26" formElement="select" component="Magento_PageBuilder/js/form/element/visual-select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="string">style-default</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Heading Styles</label>
+                <elementTmpl>Magento_PageBuilder/form/element/visual-select</elementTmpl>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options class="TextStyleSource"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+        <field name="heading_opacity" sortOrder="27" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="string">100</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Heading Opacity</label>
+                <additionalClasses>
+                    <class name="admin__field-small">true</class>
+                </additionalClasses>
+                <addAfter translate="true">%</addAfter>
+                <validation>
+                    <rule name="validate-number" xsi:type="boolean">true</rule>
+                    <rule name="greater-than-equals-to" xsi:type="number">0</rule>
+                    <rule name="less-than-equals-to" xsi:type="number">100</rule>
+                </validation>
+            </settings>
+        </field>
+    </fieldset>
+</form>

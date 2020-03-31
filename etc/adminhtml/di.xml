@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="BrandColorSource" type="Magento\PageBuilder\Model\Source\VisualSelect">
+        <arguments>
+            <argument name="optionsSize" xsi:type="string">small</argument>
+            <argument name="optionsData" xsi:type="array">
+                <item name="brand-black" xsi:type="array">
+                    <item name="value" xsi:type="string">brand-black</item>
+                    <item name="title" xsi:type="string" translate="true">#333333</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/brand-black-swatch.svg</item>
+                </item>
+                <item name="brand-blue" xsi:type="array">
+                    <item name="value" xsi:type="string">brand-blue</item>
+                    <item name="title" xsi:type="string" translate="true">#007AB9</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/brand-blue-swatch.svg</item>
+                </item>
+                <item name="brand-green" xsi:type="array">
+                    <item name="value" xsi:type="string">brand-green</item>
+                    <item name="title" xsi:type="string" translate="true">#009900</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/brand-green-swatch.svg</item>
+                </item>
+                <item name="brand-purple" xsi:type="array">
+                    <item name="value" xsi:type="string">brand-purple</item>
+                    <item name="title" xsi:type="string" translate="true">#990099</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/brand-purple-swatch.svg</item>
+                </item>
+                <item name="brand-red" xsi:type="array">
+                    <item name="value" xsi:type="string">brand-red</item>
+                    <item name="title" xsi:type="string" translate="true">#990000</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/brand-red-swatch.svg</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="TextStyleSource" type="Magento\PageBuilder\Model\Source\VisualSelect">
+        <arguments>
+            <argument name="optionsSize" xsi:type="string">small</argument>
+            <argument name="optionsData" xsi:type="array">
+                <item name="style-default" xsi:type="array">
+                    <item name="value" xsi:type="string">style-default</item>
+                    <item name="title" xsi:type="string" translate="true">Default</item>
+                </item>
+                <item name="style-bold" xsi:type="array">
+                    <item name="value" xsi:type="string">style-bold</item>
+                    <item name="title" xsi:type="string" translate="true">Bold</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/style-bold.svg</item>
+                </item>
+                <item name="style-italic" xsi:type="array">
+                    <item name="value" xsi:type="string">style-italic</item>
+                    <item name="title" xsi:type="string" translate="true">Italic</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/style-italic.svg</item>
+                </item>
+                <item name="style-quotes" xsi:type="array">
+                    <item name="value" xsi:type="string">style-quotes</item>
+                    <item name="title" xsi:type="string" translate="true">In Quotes</item>
+                    <item name="icon" xsi:type="string">Vendor_PageBuilderStylingOptions::css/images/content-type/heading/appearance/style-quote.svg</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

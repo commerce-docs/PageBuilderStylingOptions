@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+     <type name="heading">
+        <appearances>
+            <appearance name="default">
+                <elements>
+                    <element name="main">
+                        <attribute name="heading_color" source="data-heading-color"/>
+                        <attribute name="heading_style" source="data-heading-style"/>
+                        <style name="heading_opacity" source="opacity" converter="Vendor_PageBuilderStylingOptions/js/converter/style/opacity-in-percent"/>
+                    </element>
+                </elements>
+            </appearance>
+        </appearances>
+    </type>
+</config>

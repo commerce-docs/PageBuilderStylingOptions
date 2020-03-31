@@ -1,0 +1,56 @@
+/**
+* Copyright © Magento, Inc. All rights reserved.
+* See COPYING.txt for license details.
+*/
+
+& when (@media-common = true) {
+
+    // Heading Colors
+    .pagebuilder-stage {
+
+        [data-heading-color='brand-black'] {
+            color: #333333;
+        }
+
+        [data-heading-color='brand-blue'] {
+            color: #007ab9;
+        }
+
+        [data-heading-color='brand-green'] {
+            color: #009900;
+        }
+
+        [data-heading-color='brand-red'] {
+            color: #990000;
+        }
+
+        [data-heading-color='brand-purple'] {
+            color: #990099;
+        }
+    }
+
+    // Heading Styles
+
+    [data-heading-style='style-default'] {
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    [data-heading-style='style-bold'] {
+        font-weight: bold;
+    }
+
+    [data-heading-style='style-italic'] {
+        font-style: italic;
+    }
+
+    [data-heading-style='style-quotes'] {
+        &:before {
+            content: '\201C';
+        }
+
+        &:after {
+            content: '\201D';
+        }
+    }
+}
