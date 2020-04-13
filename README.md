@@ -1,6 +1,6 @@
 # Magento Page Builder - Configurations for Styling
 
-This module extends the Heading content type to provide three new Heading fields: `Heading Colors`, `Heading Styles`, and `Heading Opacity`, as shown here:
+This module extends the Heading content type to show how you can used `<atttibute>`, `<style>`, and `<css>` configurations to new styling options of your end users. This module adds three new Heading fields: `Heading Colors`, `Heading Styles`, and `Heading Opacity`, as shown here:
 
 ![Configurations for styling](heading-extension-using-attributes.png "Configurations for styling")
 
